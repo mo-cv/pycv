@@ -26,7 +26,7 @@ class Cameo(object):
                 
                 filters.strokeEdges(frame, frame)
                 self._curveFilter.apply(frame, frame)
-            
+
             self._captureManager.exitFrame()
             self._windowManager.processEvents()
     

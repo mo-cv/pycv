@@ -34,5 +34,6 @@ while(cv2.waitKey(1) & 0xFF != ord('q')):
     disparity = cv2.normalize(disparity, disparity, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_8U)
     cv2.imshow('disparity', disparity)
 # When everything done, release the capture
-camera.release()
+l_camera.release()
+r_camera.release()
 cv2.destroyAllWindows()
