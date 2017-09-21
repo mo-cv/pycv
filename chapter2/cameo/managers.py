@@ -2,6 +2,14 @@ import cv2
 import numpy
 import time
 
+"""
+This file is not same with the code of Book.
+
+Here tries to refactor the code of the Book to make it responsibility clear.
+Make it more OO.
+
+"""
+
 
 class ImageFrameWriter(object):
     def __init__(self):
