@@ -19,5 +19,6 @@ for i in circles[0,:]:
 
 cv2.imwrite("planets_circles.jpg", planets)
 cv2.imshow("HoughCirlces", planets)
+cv2.imshow("cimg",cimg)
 cv2.waitKey()
 cv2.destroyAllWindows()

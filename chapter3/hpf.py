@@ -20,8 +20,10 @@ k5 = ndimage.convolve(img, kernel_5x5)
 blurred = cv2.GaussianBlur(img, (17,17), 0)
 g_hpf = img - blurred
 
+cv2.imshow("original", img)
 cv2.imshow("3x3", k3)
 cv2.imshow("5x5", k5)
+cv2.imshow("blurred", blurred)
 cv2.imshow("g_hpf", g_hpf)
 cv2.waitKey()
 cv2.destroyAllWindows()
